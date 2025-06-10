@@ -30,7 +30,7 @@ If the user provides an invalid number (non-numeric or less than or equal to zer
 
 ## Files Included
 
-chaiBoraCalculator.js
+chaiCalculator.js
 
 ---
 
@@ -185,7 +185,7 @@ If the user provides invalid input (e.g., a non-number or a value less than or e
 
 ## Files Included
 
-transactionFeeEstimator.js
+mobileMoneyEstimator.js
 
 ---
 
