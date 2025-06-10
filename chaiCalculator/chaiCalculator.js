@@ -11,13 +11,13 @@ let numberOfCups = Number(input);
 function calculateChaiIngredients(numberOfCups)
 {
   // Multiplies ingedients by the number of cups entered by the user
-    let totalWater = amountOfWater * numberOfCups;
-    let totalMilk = amountOfMilk * numberOfCups;
-    let totalLeaves = tableSpoonLeaves * numberOfCups;
-    let totalSugar = teaspoonSugar * numberOfCups;
+  let totalWater = amountOfWater * numberOfCups;
+  let totalMilk = amountOfMilk * numberOfCups;
+  let totalLeaves = tableSpoonLeaves * numberOfCups;
+  let totalSugar = teaspoonSugar * numberOfCups;
 
   // Outputs the total ingredients needed for the specified number of cups 
-    console.log(`To make ${numberOfCups} cups of Kenyan Chai, you will need:
+  console.log(`To make ${numberOfCups} cups of Kenyan Chai, you will need:
   - Water: ${totalWater} ml
   - Milk: ${totalMilk} ml
   - Tea Leaves (Majani): ${totalLeaves} tablespoons
@@ -32,5 +32,3 @@ if (isNaN(numberOfCups) || numberOfCups <= 0) {
 } else {
   calculateChaiIngredients(numberOfCups);
 }
-
-

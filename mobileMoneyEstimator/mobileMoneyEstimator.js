@@ -31,6 +31,3 @@ if (isNaN(amountToSend) || amountToSend <= 0) {
 } else {
   estimateTransactionFee(amountToSend);
 }
-
-
-

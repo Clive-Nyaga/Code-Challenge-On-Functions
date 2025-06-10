@@ -27,6 +27,3 @@ if (isNaN(distanceInKm) || distanceInKm <= 0) {
 } else {
   calculateBodaFare(distanceInKm);
 }
-
-
-
