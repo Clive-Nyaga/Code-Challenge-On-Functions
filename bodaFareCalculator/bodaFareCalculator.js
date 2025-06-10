@@ -1,6 +1,6 @@
 // Rates
-baseFare = 50;
-chargePerKm = 15;
+let baseFare = 50;
+let chargePerKm = 15;
 
 function calculateBodaFare(distanceInKm)
 {
