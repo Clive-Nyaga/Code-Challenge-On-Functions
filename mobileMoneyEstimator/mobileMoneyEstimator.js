@@ -1,6 +1,10 @@
+// User input for the amount to send
+let input = prompt("Unatuma Ngapi? (KES): ");
+let amountToSend = Number(input);
+
 function estimateTransactionFee(amountToSend){
   // Calculates the transaction fee based on the amount to send
-    transactionFee = (1.5 / 100) * amountToSend;
+    let transactionFee = (1.5 / 100) * amountToSend;
     if (transactionFee < 10) {
         transactionFee = 10;
         totalAmount = amountToSend + transactionFee;
@@ -21,13 +25,12 @@ Total amount to be debited: KES ${totalAmount}
 Send Money Securely!`)
 }
 
-// User input for the amount to send
-let input = prompt("Unatuma Ngapi? (KES): ");
-let amount = Number(input);
-
 // Validates user input
-if (isNaN(amount) || amount <= 0) {
+if (isNaN(amountToSend) || amountToSend <= 0) {
   console.log("Please enter a valid amount greater than 0.");
 } else {
-  estimateTransactionFee(amount);
+  estimateTransactionFee(amountToSend);
 }
+
+
+

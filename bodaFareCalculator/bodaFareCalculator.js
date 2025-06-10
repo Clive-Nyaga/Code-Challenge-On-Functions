@@ -2,6 +2,10 @@
 let baseFare = 50;
 let chargePerKm = 15;
 
+// User input for the distance in kilometers
+let input = prompt("Unafika wapi Mkubwa? Kilometer ngapi?: ");
+let distanceInKm = Number(input);
+
 function calculateBodaFare(distanceInKm)
 {
     // Calculates the total fare based on the distance
@@ -17,13 +21,12 @@ Total: KES ${totalFare}
 Panda Pikipiki!`);   
 }
 
-// User input for the distance in kilometers
-let input = prompt("Unafika wapi Mkubwa? Kilometer ngapi?: ");
-let distance = Number(input);
-
 // Validates user input
-if (isNaN(distance) || distance <= 0) {
+if (isNaN(distanceInKm) || distanceInKm <= 0) {
   console.log("Please enter a valid distance greater than 0.");
 } else {
-  calculateBodaFare(distance);
+  calculateBodaFare(distanceInKm);
 }
+
+
+

@@ -4,6 +4,10 @@ let amountOfMilk = 50;
 let tableSpoonLeaves = 1;
 let teaspoonSugar = 2;
 
+// User input for the number of cups
+let input = prompt("Karibu! How many cups of Chai Bora would you like to make? ");
+let numberOfCups = Number(input);
+
 function calculateChaiIngredients(numberOfCups)
 {
   // Multiplies ingedients by the number of cups entered by the user
@@ -22,13 +26,11 @@ function calculateChaiIngredients(numberOfCups)
 Enjoy your Chai Bora!`);
 }
 
-// User input for the number of cups
-let input = prompt("Karibu! How many cups of Chai Bora would you like to make? ");
-let numberOfCups = Number(input);
-
 // Validates user input
 if (isNaN(numberOfCups) || numberOfCups <= 0) {
   console.log("Please enter a valid number greater than 0.");
 } else {
   calculateChaiIngredients(numberOfCups);
 }
+
+
